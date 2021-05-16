@@ -9,8 +9,8 @@
 -*DMU BB*, [online lab matterial]
 
 ## Git Hub Accout
-*Github* , [Github Account](https://vle.dmu.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_557840_1&content_id=_5025142_1)
-
+*Github* , [Github Account](https://github.com/LuwamMeaza/luluwebsite.git)
+## SCCB - attain [resouces](https://attain.sccb.ac.uk/moodle/mod/folder/viw.php) 
 ## Files Requed need
 *Software*
 - download and instal virtual studio code
