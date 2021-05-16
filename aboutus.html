@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+	<html lang="en">	
+	<HEAD>
+		<title>About Us</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="css/styleforallpages.css">
+		<link rel="stylesheet" href="css/Img.css">
+		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="css/other_style.css">
+		<link rel="stylesheet" href="css/login.css">
+
+			<link rel="icon" href="icons/.png" > <!-- favicon-->
+			<!-- scripts-->
+	</HEAD>
+		<BODY>
+				<div id="container">
+					<div id="navigaionbar" class="navhover">
+						<div id="top-logo">
+							<img src="images/logo2.png" alt="logo image">
+						</div>
+						<div id="navtop" class="nav-all">							
+							<ul>
+								<li><a type="button" class='loginbtn' onclick="signup()">Sign Up</a></li>
+								<li> <a type="button" class='loginbtn' onclick="login()">Log In</a></li>
+							</ul>
+						</div> 
+						<div id="nav-bot"  class="nav-all">							
+							<ul>
+								<li><a href="index.html" > Home</a></li>
+								<li><a href="traditional.html">Traditional</a></li>
+								<li><a href="modern.html">Modern</a>
+								<li><a href="aboutus.html"class="active">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="bc-login-form">
+					<div id='login-form'class='login-page'>
+						
+						<div class="form-box">
+							<div id="s-in-close-form">+</div>
+							<div class='button-box'>
+								<div id='btn'></div>
+								<button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+								<button type='button'onclick='signup()'class='toggle-btn'>Signup</button>
+							</div>
+							<form id='login' class='input-group-login'>
+						<input type='text'class='input-field'placeholder='Email ID' required >
+						<input type='password'class='input-field'placeholder='Enter Password' required>
+						<input type='checkbox'class='check-box'><span>Remember Password</span>
+						<button onclick="submt" type='submit'class='submit-btn'>Log in</button>
+					 </form>
+					 <form id='signup' class='input-group-signup'>
+						 <input type='text'class='input-field'placeholder='First Name' required>
+						 <input type='text'class='input-field'placeholder='Last Name ' required>
+						 <input type='email'class='input-field'placeholder='Email ID' required>
+						 <input type='password'class='input-field'placeholder='Enter Password' required>
+						 <input type='password'class='input-field'placeholder='Confirm Password'  required>
+						 <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+						<button  onclick="submt" type='submit'class='submit-btn'>signup</button>
+						 </form>
+						</div>
+					</div>
+				</div>
+				<!--------------------------------------------About the Comapny--------------------------------------------------------------->
+				<div class="company-info">
+				<h3>ABOUT US</h3>
+				<h2>ERI HABESHA TRADITIONAL MISSION IS TO PROVIDE WOMEN AND MEN WITH THE MOST LUXURIOUS TRADITIONAL AND MODERN EAST AFRICA CLOSES APPAREL ON THE MARKET.</h2>
+				<p>Our products are unique and fashionable designs, but more importantly practical and technical. Designed by all top designers from Eritrea and Ethiopia, 
+					our apparel is crafted for women and men. Our clothes are one of the top designs in the market.</p>
+				<h2>GREEN LIVING / MANUFACTURING</h2>
+				<p>We are also committed to our environment and our community by continually striving to make our manufacturing facility greener each day by recycling plant 
+					waste and by using earth friendly materials in our products. We follow fair labor practices with all of our employees and business partners to create a sustainable work environment.</p>
+				<h2>ERI HABESHA WE ARE PROUD OF</h2>
+				<p>We guarantee absolute satisfaction on every article we sell. We use, and will continue to use, only the best in high performance fabrics and trims and will build upon our 5 years’
+					 worth of expertise as resellers to ensure the highest of quality standards on all of our Eri Habesha.</p>
+				<h2>FAMILY OWNED</h2>
+				<p>We are also a local, family-owned company. Our name, Eri, comes from our beloved county Eritrea in East Africa. We draw upon nature and its energy for our inspiration, always remembering 
+					that our ultimate goal is to reflect the power of natural femininity in our designs, as well as our lifestyle.</p>
+				</div>
+				<!--------------------------------------------MAP--------------------------------------------------------------->
+				<div id="map-cont">
+				<div class="company-address">
+					<p class="underline">Our Address</p>
+					<p>Digbeth Campus</p>
+					<p>High Street Deritend, </p>
+					<p>Birmingham </p>
+					<p>B5 5SU </p>
+				</div> 
+				<div class="mapouter"><div class="gmap_canvas">
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=B5%205SU&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+					</iframe></div>
+				</div></div>
+				<!---------------------------------------------------------------------------------------------------------------->
+				<div id="animation-cont">
+					<section>
+						<video src="videos/smoke.mp4" autoplay muted></video>
+						<h1 class="smoke_typo_an">
+							<span>T</span>
+							<span>H</span>
+							<span>A</span>
+							<span>N</span>
+							<span>K</span>
+							<span>S</span>
+						</h1>
+					</section>
+					<h5 class="typo_an" >FOR VISITING OUR WEBSITE.  </h5>
+				</div>
+
+				<!---------------------------------------------------------------------------------------------------------------->
+					<div class="form-container">
+						<h1 class="brand"> Contact us</h1>
+						<div class="wrapper ">
+						  <div class="side-info">
+							<h3>Eri fushion</h3>
+							<ul>
+							  <li> Digbeth Campus</li>
+							  <li> 0121 694 5000</li>
+							  <li> Erifashion@acme.test</li>
+							</ul>
+							</div>
+					<div class="contact">
+						<h3>Email Us</h3>
+					<form action="MAILTO:s45306884@sccb.ac.uk" method="post" enctype="text/plain">
+						<p>
+						  <label>Name</label>
+						  <input type="text" name="name" size="30" placeholder="E.g. John Smith" pattern="[A-Za-z]{1,15}+[][A-Za-z]{1,15}" required>
+						</p>
+						<p>
+						  <label>Company <span class="span-gray">(Optional)</span></label>
+						  <input type="text" name="company">
+						</p>
+						<p>
+						  <label>Email Address</label>
+						  <input class="email" type="email" name="email" placeholder="1234@abcd.com" required>
+						</p>
+						<p>
+						  <label>Phone Number</label>
+						  <input type="tel" name="phone" placeholder="071234..." pattern="[0-9]{1,11}" required>
+						</p>
+						<p class="full">
+						  <label>Message</label>
+						  <textarea name="message" rows="5"  name="Additional Comments"  placeholder="Enter text here..."></textarea>
+						</p>
+						<p class="full">
+						  <button >Submit</button>
+						</p>
+					  </form>
+					  </div>
+					</div>
+				</div>
+			<div id="blfooter">
+					
+				<div id="bot-logo">
+					<img src="images/logo1.png" alt="logo image">
+			</div> 
+			<div class="bt-address">
+				<p>Digbeth Campus</p>
+				<p>High Street Deritend, </p>
+				<p>Birmingham </p>
+				<p>B5 5SU </p>
+			</div> 
+			 
+			<div id="socialmedia">
+				<div class="socialmimg">  <a href="https://www.facebook.com"> <img alt="facebook icon" src="icons/facebook.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.instagram.com"> <img alt="instagram icon" src="icons/instagram.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.twitter"><img alt="twitter icon" src="icons/twitter.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.pinterest.com"><img alt="pinterest icon" src="icons/pinterest.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.linkedin.com"><img alt="linkedin icon" src="icons/linkedin.png"></a>
+			</div>
+		</div>
+		<div id="bccopyright"> <p> All rights reserved 2021 &#169; ERI</p></div>
+			
+	</div>
+
+		</div>
+		<script src="js/script.js"></script>
+	</BODY>
+</html> 

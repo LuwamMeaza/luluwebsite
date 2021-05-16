@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+	<html lang="en">	
+	<HEAD>
+		<title>ERI Fashion</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="css/styleforallpages.css">
+		<link rel="stylesheet" href="css/Img.css">
+		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/mediaquery.css">
+			<link rel="icon" href="icons/logo.png" > <!-- favicon-->
+			<script src="js/api.js" defer></script>
+			<script src="js/otherscript.js" defer></script><!-- scripts-->
+	</HEAD>
+		<BODY>
+				<div id="container">
+					<div id="navigaionbar" class="navhover">
+						<div id="top-logo">
+							<img src="images/logo2.png" alt="logo image">
+						</div>
+						<div id="navtop" class="nav-all">							
+							<ul>
+								<li><a type="button" class='loginbtn' onclick="signup()">Sign Up</a></li>
+								<li> <a type="button" class='loginbtn' onclick="login()">Log In</a></li>
+							</ul>
+						</div> 
+						<div id="nav-bot"  class="nav-all">							
+							<ul>
+								<li><a href="index.html" class="active"> Home</a></li>
+								<li><a href="traditional.html">Traditional</a></li>
+								<li><a href="modern.html">Modern</a>
+								<li><a href="aboutus.html">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="bc-login-form">
+						<div id='login-form'class='login-page'>
+							
+							<div class="form-box">
+								<div id="s-in-close-form">+</div>
+								<div class='button-box'>
+									<div id='btn'></div>
+									<button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+									<button type='button'onclick='signup()'class='toggle-btn'>Signup</button>
+								</div>
+								<form id='login' class='input-group-login'>
+							<input type='text'class='input-field'placeholder='Email ID' required >
+							<input type='password'class='input-field'placeholder='Enter Password' required>
+							<input type='checkbox'class='check-box'><span>Remember Password</span>
+							<button type='submit'class='submit-btn'>Log in</button>
+						 </form>
+						 <form id='signup' class='input-group-signup'>
+							 <input type='text'class='input-field'placeholder='First Name' required>
+							 <input type='text'class='input-field'placeholder='Last Name ' required>
+							 <input type='email'class='input-field'placeholder='Email ID' required>
+							 <input type='password'class='input-field'placeholder='Enter Password' required>
+							 <input type='password'class='input-field'placeholder='Confirm Password'  required>
+							 <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+							<button type='submit'class='submit-btn'>signup</button>
+							 </form>
+							</div>
+						</div>
+					</div>
+					<div id="slideshow">
+						<div class="slider">
+							<div class="slides">
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 1</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>SUBSCRIBE</button>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 2</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>COMMENT</button>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 3</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>SHARE</button>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 4</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>SUBSCRIBE</button>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 5</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>COMMENT</button>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide-data">
+										<h1>This is Slide # 6</h1>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+										<button>SHARE</button>
+									</div>
+								</div>
+							</div>
+							
+							<button class="arrows prev" onclick="plusslide(-1)">
+								<span><i class="fas fa-angle-left"></i></span>
+							</button>
+							<button class="arrows next" onclick="plusslide(1)">
+								<span><i class="fas fa-angle-right"></i></span>
+							</button>
+					
+							<div class="dots">
+								<span onclick="currentslide(1)"></span>
+								<span onclick="currentslide(2)"></span>
+								<span onclick="currentslide(3)"></span>
+								<span onclick="currentslide(4)"></span>
+								<span onclick="currentslide(5)"></span>
+								<span onclick="currentslide(6)"></span>
+							</div>
+						</div>
+				</div>
+				<div id="midcontainer" >
+					<div id="menu-div">
+						<img class="menubtn" value="on" id="openbtn" src="icons/openmenu.png" alt="menu icon">
+						<img class="menubtn" value="off" id="closebtn" src="icons/closemenu.png" alt="menu icon">
+						</div>
+						<div id="l-sidebar" class="sidebar">	
+							<nav class="sticky-side-bar">
+								<h2>Categories</h2>
+								<ul>
+								  <li><a class="side-bar-back" id="topmar" href="#menandwomen">All Men's and Women</a></li>
+								  <li><a class="side-bar-back"  href="#newcoiming">New Coming</a></li>
+								  <li><a class="side-bar-back"  href="#topsales">Top Sales</a></li>
+								  <li><a class="side-bar-back"  href="#custFavor">Customers Favorite</a></li>
+								  <li><a class="side-bar-back"  href="traditional.html">Old Style</a></li>
+								  <li><a class="side-bar-back"  href="modern.html">Fatshion</a></li>
+								</ul>
+							</nav>
+						  </div>
+		
+						<div   id="midcontainer-right"> 
+							<div class="mainheadding" >
+								<h5 class="txtanimate">Stay Home, Protect The NHS, Save Lives - COVID-19.</h>
+							</div> 
+							<div class="grid-style1 grid4all">
+								<div class="grid-details-large grid-d1">
+									<h2>Our latest</h2>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+										officiis delectus quae id est, vero molestiae, earum quaerat quasi. Eum asperiores eligendi non.</p>
+								</div>
+								<div  class="grid-item item-1 ">
+									<img src="images/imgf1.jpg" alt="logo image" >
+								</div>
+								<div  class="grid-item item-2" >
+									<img src="images/imgf2.jpg" alt="logo image" >
+								</div>
+								<div class="grid-details-large grid-d1">
+									<h2>Our latest</h2>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+										officiis delectus quae id est, vero molestiae, earum quaerat quasi. Eum asperiores eligendi non.</p>
+								</div>
+								
+								<div class="grid-details-large grid-d1">
+									<h2>Our latest</h2>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+										officiis delectus quae id est, vero molestiae, earum quaerat quasi. Eum asperiores eligendi non.</p>
+								</div>
+								<div  class="grid-item item-3">
+									<img src="images/imgf3.jpg" alt="logo image">
+								</div>
+							</div> 
+								<div class="mainheadding">								<!-- Heading 1-->
+									<h5 id="menandwomen" >Men and Women</h>
+								</div> 
+							<div class="grid-style2 grid4all">
+								<div  class="grid-item item-4">
+									<img src="images/imgf4.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-5">
+									<img src="images/imgf5.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-6">
+									<img src="images/imgf6.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-7">
+									<img src="images/imgf7.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-8">
+									<img src="images/imgf8.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-added">
+									<img src="images/imgf8.jpg" alt="logo image">
+								</div>
+							</div> 
+								<div class="mainheadding">								<!-- Heading 2-->
+									<h5 id="custFavor">Customers Favorite</h>
+								</div> 
+							<div class="grid-style3 grid4all">
+								
+								<div  class="grid-item item-9 item-dis">
+									<div class="grid-details"><h2>Our latest</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+											Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+											officiis delectus quae id est, vero molestiae, earum quaerat 
+											quasi. Eum asperiores eligendi non.</p>
+									</div>
+									<img src="images/imgf9.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-10 item-dis">
+									<img src="images/imgf10.jpg" alt="logo image">
+									<div class="grid-details"><h2>Our latest</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+											Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+											officiis delectus quae id est, vero molestiae, earum quaerat 
+											quasi. Eum asperiores eligendi non.</p>
+									</div>
+									
+								</div>	
+								<div  class="grid-item item-11 item-dis">
+									<div class="grid-details"><h2>Our latest</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+											Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+											officiis delectus quae id est, vero molestiae, earum quaerat 
+											quasi. Eum asperiores eligendi non.</p>
+									</div>
+									<img src="images/imgf11.jpg " alt="logo image">
+								</div>
+								<div  class="grid-item item-12 item-dis">
+									<div class="grid-details"><h2>Our latest</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+											Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+											officiis delectus quae id est, vero molestiae, earum quaerat 
+											quasi. Eum asperiores eligendi non.</p>
+									</div>
+									<img src="images/imgf12.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-13">
+									<img src="images/imgf13.jpg" alt="logo image">
+								</div>
+							</div>
+								<div class="mainheadding">															<!-- Heading 3-->
+									<h5 id="topsales">Top Sales</h>
+								</div> 
+							<div class="grid-style4 grid4all">
+								
+								<div  class="grid-item item-14 item-dis">
+									<img src="images/imgf14.jpg" alt="logo image">
+									<div class="grid-details"><h2>Our latest</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+											Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+											officiis delectus quae id est, vero molestiae, earum quaerat 
+											quasi. Eum asperiores eligendi non.</p>
+									</div>
+								</div>
+								<div  class="grid-item item-15 item-dis">
+									<img src="images/imgf15.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-16 item-dis">
+								<div class="grid-details "><h2>Our latest</h2>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										Cum nisi maxime impedit obcaecati consectetur debitis eaque 
+										officiis delectus quae id est, vero molestiae, earum quaerat 
+										quasi. Eum asperiores eligendi non.</p>
+								</div>
+								<img src="images/imgf16.jpg " alt="logo image">
+								</div>
+							</div> 
+								<div class="mainheadding">												<!-- Heading 4-->
+									<h5 >Coming Soon</h>
+								</div> 
+							<div class="grid-style5 grid4all">
+								
+								<div  class="grid-item item-17">
+									<img src="images/imgf17.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-18">
+									<img src="images/imgf18.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-19">
+									<img src="images/imgf19.jpg" alt="logo image">
+								</div>
+							</div> 
+								<div class="mainheadding">											<!-- Heading 5-->
+									<h5 id="newcoiming" >New Coming</h>
+								</div> 
+							<div class="grid-style6 grid4all">
+								
+								<div  class="grid-item item-20">
+									<img src="images/imgf20.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-21">
+									<img src="images/imgf21.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-22">
+									<img src="images/imgf22.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-23">
+									<img src="images/imgf23.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-24">
+									<img src="images/imgf24.jpg" alt="logo image">
+								</div>
+								<div  class="grid-item item-25">
+									<img src="images/imgf25.jpg" alt="logo image">
+								</div>
+							</div>
+						</div>
+					</div> 
+				<div id="blfooter">
+					
+						<div id="bot-logo">
+							<img src="images/logo1.png" alt="logo image">
+					</div> 
+					<div class="bt-address">
+						<p>Digbeth Campus</p>
+						<p>High Street Deritend, </p>
+						<p>Birmingham </p>
+						<p>B5 5SU </p>
+					</div> 
+						<div id="socialmedia">
+						<div class="socialmimg">  <a href="https://www.facebook.com"> <img alt="facebook icon" src="icons/facebook.png"></a>
+						</div>
+						<div class="socialmimg"> <a href="https://www.instagram.com"> <img alt="instagram icon" src="icons/instagram.png"></a>
+						</div>
+						<div class="socialmimg"> <a href="https://www.twitter"><img alt="twitter icon" src="icons/twitter.png"></a>
+						</div>
+						<div class="socialmimg"> <a href="https://www.pinterest.com"><img alt="pinterest icon" src="icons/pinterest.png"></a>
+						</div>
+						<div class="socialmimg"> <a href="https://www.linkedin.com"><img alt="linkedin icon" src="icons/linkedin.png"></a></div>
+					</div>
+					<!------------------------------------------------------------------------------------------>
+		<!--API--->			<div id="api-cont">
+								<div class="weather loading weather-info">
+								<h2 class="city">Weather in Birmingham </h2>
+								<h1 class="temp">11°C</h1>
+								<div class="humidity">Humidity: 76%</div>
+								</div>
+								<div class="description-icon">
+								<img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+								<div class="description">Partly cloudy</div>
+								</div>
+								<div class="search">
+								<input type="text" class="search-bar" placeholder="Search your city">
+								<button class="inside-btn"><img src="icons/search.png" alt=""></button>
+								</div>
+							</div>
+					<!------------------------------------------------------------------------------------------>
+				<div id="bccopyright"> <p> All rights reserved 2021 &#169; ERI</p></div>
+					<span id="sh-trigger-btn"></span>
+			</div>
+
+		</div>
+		<script src="js/script.js"></script>
+	</BODY>
+</html> 

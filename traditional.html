@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+	<html lang="en">	
+	<HEAD>
+		<title>Traditional </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="css/styleforallpages.css">
+		<link rel="stylesheet" href="css/Img.css">
+		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="css/login.css">
+			<link rel="icon" href="icons/.png" > <!-- favicon-->
+			<!-- scripts-->
+	</HEAD>
+		<BODY>
+				<div id="container">
+					<div id="navigaionbar" class="navhover">
+						<div id="top-logo">
+							<img src="images/logo2.png" alt="logo image">
+						</div>
+						<div id="navtop" class="nav-all">							
+							<ul>
+								<li><a type="button" class='loginbtn' onclick="signup()">Sign Up</a></li>
+								<li> <a type="button" class='loginbtn' onclick="login()">Log In</a></li>
+							</ul>
+						</div> 
+						<div id="nav-bot"  class="nav-all">							
+							<ul>
+								<li><a href="index.html"> Home</a></li>
+								<li><a href="traditional.html" class="active">Traditional</a></li>
+								<li><a href="modern.html">Modern</a>
+								<li><a href="aboutus.html">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="bc-login-form">
+						<div id='login-form'class='login-page'>
+							
+							<div class="form-box">
+								<div id="s-in-close-form">+</div>
+								<div class='button-box'>
+									<div id='btn'></div>
+									<button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+									<button type='button'onclick='signup()'class='toggle-btn'>Signup</button>
+								</div>
+								<form id='login' class='input-group-login'>
+							<input type='text'class='input-field'placeholder='Email ID' required >
+							<input type='password'class='input-field'placeholder='Enter Password' required>
+							<input type='checkbox'class='check-box'><span>Remember Password</span>
+							<button type='submit'class='submit-btn'>Log in</button>
+						 </form>
+						 <form id='signup' class='input-group-signup'>
+							 <input type='text'class='input-field'placeholder='First Name' required>
+							 <input type='text'class='input-field'placeholder='Last Name ' required>
+							 <input type='email'class='input-field'placeholder='Email ID' required>
+							 <input type='password'class='input-field'placeholder='Enter Password' required>
+							 <input type='password'class='input-field'placeholder='Confirm Password'  required>
+							 <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+							<button type='submit'class='submit-btn'>signup</button>
+							 </form>
+							</div>
+						</div>
+					</div>
+					<div class="payment-cont">
+						<div class="card-content-box">
+							<div class="close-form">+</div>
+							<div class="heading">
+								<h1>Confirm Payment</h1>
+							</div>
+							<div class="payment-info">
+								<form>
+										<label for="card-holder">Card holder</label>
+										<input type="text" name="card-holder" placeholder="E.g. john smith" required>
+									   <label for="cardNumber">Card Number</label>
+										<input type="number" placeholder="0000 0000 0000 0000 " required>
+										<div class=" securiy-dtl ">
+											<label for="cvv">CVV</label>
+											<label for="e-date">Expiry date</label>
+										</div>
+										<div class=" securiy-dtl notthis">
+										<input type="number" name="cvv" maxlength="3" placeholder="000" required>
+										<input type="number" name="e-date" placeholder="00 / 00" required>
+										</div>
+										<div class="p-t-cards">
+										<img src="images/vcard.png">
+										<img src="images/mcard.png">
+										<img src="images/paypal.png">
+									</div>
+									<div>
+										<button class="con-btn btn-hover">Confirm</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="shopping-cont">
+						<div class="shopping-content-box">
+							<div class="close-form" id="zindex">+</div>
+							<div class="products-img">
+								<div class="prd-display-img">
+									<img id="d-img" src="images/sc1.jpg" alt="Products Image">
+								 </div>
+								<div class="prd-slide-img">
+									<div class="prds-imgs">
+										<img onclick="change_img(this)" src="images/sc1.jpg" alt="products Images" class="p-imgs">
+										<img onclick="change_img(this)" src="images/sc2.jpg" alt="products Images" class="p-imgs">
+										<img onclick="change_img(this)" src="images/sc3.jpg" alt="products Images" class="p-imgs">
+										<img onclick="change_img(this)" src="images/sc4.jpg" alt="products Images" class="p-imgs">
+										<img onclick="change_img(this)" src="images/sc5.jpg" alt="products Images" class="p-imgs">
+										<img onclick="change_img(this)" src="images/sc6.jpg" alt="products Images" class="p-imgs">
+									</div>
+								</div>
+							</div>
+							<div class="prd-info">
+								<h1>Black and Gold</h1>
+								<div class="disc-prd">
+									 Habesha Dress - Black & Gold -
+									 <p>Orginal-Habesha-Dress. New Patern</p>
+								</div>
+								<div class="price-info">
+									<h1>£180</h1>
+									<span> &#10003; In stock</span>
+								</div>
+								<form action="">
+									<span class="nospace">Size</span>
+									<select class="prd-size" name="Title" title="Please choose the size form the list" required>
+										<option disabled="disabled" selected="selected">
+											<option>Xs</option>
+											<option>S</option>
+											<option>M</option>
+											<option>L</option>
+											<option>XL</option>
+										</option>
+									</select>   
+								<a id="sh-trigger-btn" class="shp-buy-btn">Buy Now</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="middle-con">
+						<div id="menu-div">
+							<img class="menubtn" value="on" id="openbtn" src="icons/openmenu.png" alt="menu icon">
+							<img class="menubtn" value="off" id="closebtn" src="icons/closemenu.png" alt="menu icon">
+							</div>
+					<div id="l-sidebar" class="sidebar">
+						<nav class="sticky-side-bar">
+							<ul>
+								<h2>Categories</h2>>
+								<ul>
+								<li><a href="#newcoming">New Coming</a></li>
+								<li><a href="#Women">Women</a></li>
+								<li><a href="#men">Men</a></li>
+								<li><a href="modern.html">Old Style</a></li>
+								<li><a href="">Fatshion</a></li>
+								</ul>
+							</ul>
+						</nav>
+					</div>
+							<div  class="main-body">
+								<div class="mainheadding ">
+									<h5 id="Women">Women</h>
+								</div>   
+									<div class="gallery-grid-container">
+								<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img01.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img02.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£110</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img03.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£180</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img04.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£150</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img05.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£160</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img06.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£210</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img07.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£110</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img08.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£140</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img09.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>				
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img10.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£220</a>
+										</div>
+									</div>	
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img11.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£130</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img12.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img13.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£100</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img14.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£150</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img15.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£260</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img16.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£170</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img17.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£160</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img18.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£130</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img19.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£150</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img20.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£100</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img21.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£210</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img22.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£260</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img23.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£180</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img24.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£110</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/img24.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£110</a>
+										</div>
+									</div>
+									</div>		
+									<div class="mainheadding">
+										<h5 id="men">MEN</h>
+									</div>   
+									<div class="gallery-grid-container">
+									<div class="gallery-container">
+									<div class="gallery-item">
+												<div class="image">
+													<img src="images/imgm1.jpg" alt="image"> </div>
+									</div>
+									<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a href="#" class="buy-btn">Buy Now</a>	
+													</div>
+													<a href="#" class="price">£120</a>
+									</div>
+									</div>
+									<div class="gallery-container">
+											<div class="gallery-item">
+											<div class="image">
+												<img src="images/imgm2.jpg" alt="image"> </div>
+											</div>
+											<div class="details-box">
+												<div class="type">
+													<span>Rabbed Cardigan</span>
+												<span>Noe Arrival</span>
+												</div>
+												<div class="overlayer">
+													<a href="#" class="buy-btn">Buy Now</a>	
+												</div>
+												<a href="#" class="price">£120</a>
+											</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm3.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+												</div>
+									</div>
+									<div class="gallery-container">
+											<div class="gallery-item">
+											<div class="image">
+												<img src="images/imgm4.jpg" alt="image"> </div>
+											</div>
+											<div class="details-box">
+												<div class="type">
+													<span>Rabbed Cardigan</span>
+												<span>Noe Arrival</span>
+												</div>
+												<div class="overlayer">
+													<a href="#" class="buy-btn">Buy Now</a>	
+												</div>
+												<a href="#" class="price">£120</a>
+											</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm5.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+											<div class="gallery-item">
+											<div class="image">
+												<img src="images/imgm6.jpg" alt="image"> </div>
+											</div>
+											<div class="details-box">
+												<div class="type">
+													<span>Rabbed Cardigan</span>
+												<span>Noe Arrival</span>
+												</div>
+												<div class="overlayer">
+													<a href="#" class="buy-btn">Buy Now</a>	
+												</div>
+												<a href="#" class="price">£120</a>
+											</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm7.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm8.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm9.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+									<div class="gallery-container">
+										<div class="gallery-item">
+										<div class="image">
+											<img src="images/imgm10.jpg" alt="image"> </div>
+										</div>
+										<div class="details-box">
+											<div class="type">
+												<span>Rabbed Cardigan</span>
+											<span>Noe Arrival</span>
+											</div>
+											<div class="overlayer">
+												<a href="#" class="buy-btn">Buy Now</a>	
+											</div>
+											<a href="#" class="price">£120</a>
+										</div>
+									</div>
+								</div>
+									<div class="mainheadding">
+										<h5 id="newcoming">New Coming</h>
+									</div> 
+											<div class="gallery-grid-container">
+										<div class="gallery-container">
+												<div class="gallery-item">
+												<div class="image">
+													<img src="images/imgm11.jpg" alt="image"> </div>
+												</div>
+												<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a class="buy-btn">Buy Now</a>	
+													</div>
+													<a class="price">£120</a>
+												</div>
+											</div>
+											<div class="gallery-container">
+												<div class="gallery-item">
+												<div class="image">
+													<img src="images/imgm12.jpg" alt="image"> </div>
+												</div>
+												<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a class="buy-btn">Buy Now</a>	
+													</div>
+													<a href="#" class="price">£110</a>
+												</div>
+											</div>
+											<div class="gallery-container">
+												<div class="gallery-item">
+												<div class="image">
+													<img src="images/mimg3.jpg" alt="image"> </div>
+												</div>
+												<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a class="buy-btn">Buy Now</a>	
+													</div>
+													<a href="#" class="price">£180</a>
+												</div>
+											</div>
+											<div class="gallery-container">
+												<div class="gallery-item">
+												<div class="image">
+													<img src="images/mimg4.jpg" alt="image"> </div>
+												</div>
+												<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a class="buy-btn">Buy Now</a>	
+													</div>
+													<a href="#" class="price">£150</a>
+												</div>
+											</div>
+											<div class="gallery-container">
+												<div class="gallery-item">
+												<div class="image">
+													<img src="images/mimg5.jpg" alt="image"> </div>
+												</div>
+												<div class="details-box">
+													<div class="type">
+														<span>Rabbed Cardigan</span>
+													<span>Noe Arrival</span>
+													</div>
+													<div class="overlayer">
+														<a class="buy-btn">Buy Now</a>	
+													</div>
+													<a href="#" class="price">£160</a>
+												</div>
+											</div>
+										</div>
+							</div>
+			</div>
+			<div id="blfooter">
+					
+				<div id="bot-logo">
+					<img src="images/logo1.png" alt="logo image">
+			</div> 
+			<div class="bt-address">
+				<p>Digbeth Campus</p>
+				<p>High Street Deritend, </p>
+				<p>Birmingham </p>
+				<p>B5 5SU </p>
+			</div> 
+			 
+			<div id="socialmedia">
+				<div class="socialmimg">  <a href="https://www.facebook.com"> <img alt="facebook icon" src="icons/facebook.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.instagram.com"> <img alt="instagram icon" src="icons/instagram.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.twitter"><img alt="twitter icon" src="icons/twitter.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.pinterest.com"><img alt="pinterest icon" src="icons/pinterest.png"></a>
+				</div>
+				<div class="socialmimg"> <a href="https://www.linkedin.com"><img alt="linkedin icon" src="icons/linkedin.png"></a>
+			</div>
+		</div>
+		<div id="bccopyright"> <p> All rights reserved 2021 &#169; ERI</p></div>
+			
+	</div>
+
+		</div>
+		<script src="js/script.js"></script>
+	</BODY>
+</html> 
