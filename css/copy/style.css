@@ -1,0 +1,273 @@
+@font-face 
+{
+  font-family: RocknRollOne;
+ src: url('../fonts/RocknRollOne-Regular.ttf');
+}
+p{
+    font-family: RocknRollOne;
+    color: whitesmoke;
+}
+h1{
+    font-family: RocknRollOne;
+}
+#logo{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 100px;
+    height: 30px;
+}
+#container{
+    width: 100%; 
+	height:100vh; 
+	position: absolute; 
+    left: -1px;
+    top: -1px;
+    padding: 0;
+    margin: 0;
+}
+
+#btlogo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 30px; 
+}
+#footer{
+    position: relative;
+    width: 100%;
+    height:20% ;
+    bottom: 0%;
+    left: 0%;
+    background-color: #262626;
+}
+#socialmedia
+{
+	margin: 0;
+	padding: 0;
+	width: 40%;
+	height: 20%;
+	position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.socialmimg{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 5px;
+	padding: 0;
+    float:left;
+}
+#bccopyright{
+    margin: 0;
+	padding: 0;
+	background-color:none;
+	width: 100%;
+	height: 18%;
+	position: absolute;
+	bottom: 5%;
+	left: 500px;;
+}
+/* index page*/
+#body{
+    width: 100%; 
+	position: relative; 
+    top: 12%;
+    padding: 0;
+    margin: 0;
+    border-style: solid; 
+	border-width:medium; 
+	border-color: red;
+}
+#banner0{
+    position: relative;
+    top: 2%;
+    width: 100%;
+    height:400px;
+    background-color: #000;
+    border-style: solid; 
+	border-width:medium; 
+	border-color: red;
+}
+#l-sidebar{
+    position: relative;
+    width: 12%;
+    top: 12%;
+    background-color: #000;
+    border-style: solid; 
+	border-width:medium; 
+	border-color: red;
+    padding: 1%;
+}
+#l-sidebar li a{
+    display: block;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-right:1.5em;
+    text-align: center;						   
+}
+/* woman and men page*/
+#main-body{ 
+    position: absolute;
+    left:14%;
+    top: 19%;
+    width: 80%;
+    height: fit-content;
+    border-style: solid; 
+	border-width:medium; 
+	border-color: red;
+}
+.main-body{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:400px 400px;
+    grid-gap:50px;
+    grid-auto-flow: dense;
+    text-align:center;
+}
+#main-body2{
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    top: 130em;
+    left:14%;
+    border-style: solid; 
+	border-width:medium; 
+	border-color: blue;
+}   
+.mainheadding{
+    background-color:#000;
+    width: 80%;
+    height: 60px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headding01{
+    position: absolute;
+    top: 12.5%;
+    left: 14%;
+}
+#headding02{
+    position: absolute;
+    top: 124em;
+    left: 14%;
+}
+.gallery-container{
+    width:100%;
+    height:100%;
+    position:relative;
+    border-radius: 10px;
+	overflow: hidden;
+}
+.gallery-item{
+    width:100%;
+    height:80%;
+    
+}
+
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+}
+.gallery-item:hover .image img{
+    transform:scale(1.5);
+}
+
+.detail-box{
+	width: 100%;
+    height: 10%;
+    display: flex;
+	justify-content: space-between;
+
+	font-family:RocknRollOne;
+} 
+ a{
+    text-decoration: none;
+    list-style-type: none; 
+}
+.type{
+	display: flex;
+	flex-direction: column;
+    font-size: 0.8rem;
+    font-family: RocknRollOne;
+	margin: 5px 0px;
+	letter-spacing: 0.5px;
+	padding-right: 1px;
+    ;
+}
+.type span{
+	color: #000;
+}
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size: 0.8rem;
+	font-family: RocknRollOne;
+	letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 35px;
+    right: 5px;
+    
+}
+.buy-btn{
+	width:80px;
+	height: 30px;
+	display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 35%;   
+	justify-content: center;
+	align-items: center;
+	background-color: #252525;
+	color:#fff;
+	font-family: RocknRollOne;
+    font-size: 0.8rem;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+
+
+.buy-btn:hover{
+	color:#262626;
+	background-color:#fff;
+	transition: all ease 0.3s;
+}
+h5{
+    font-family: RocknRollOne;
+    font-size: 1.8rem; 
+    text-align:center;
+    color: #fff;
+    margin: 5px 0px;
+	letter-spacing: 6px;
+	padding-right: 1px;
+}
+.gridcont{
+    position: relative;
+    top: 15%;
+    height: 100vh;
+    width: 100%;
+    border: 10px solid #14a76c;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.grid-item {
+  background-color: #ccc;
+  border: 4px solid #ff652f;
+  padding: 20px;
+}

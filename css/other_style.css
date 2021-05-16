@@ -1,0 +1,114 @@
+*{
+	margin:0px;
+	padding: 0px;
+
+}
+html{
+    height:100% ;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#animation-cont{
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px yellow;
+}
+video{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smoke_typo_an{
+    font-size: 8rem;
+    letter-spacing: 2rem;
+}
+.smoke_typo_an span{
+    opacity: 0;
+    display: inline-block;
+    animation: smoketext 1s linear forwards ;
+}
+
+.typo_an{/* about as page text animationo*/
+    animation: type 5s steps(49) forwards;
+    white-space: nowrap;
+    border-right:4px solid white;
+    overflow: hidden;
+    opacity: 0;
+    letter-spacing: 0.6rem;
+		position: absolute;
+    bottom: 25%;
+    font-size: 6.5rem;
+    color: white;
+}
+
+@keyframes smoketext{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+        filter: blur(10px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        filter: blur(0);
+        color: rgb(175, 139, 46);
+
+    }
+}
+.smoke_typo_an span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.smoke_typo_an span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+.smoke_typo_an span:nth-child(3)
+{
+    animation-delay: 2s;
+}
+.smoke_typo_an span:nth-child(4)
+{
+    animation-delay: 2.8s;
+}
+.smoke_typo_an span:nth-child(5)
+{
+    animation-delay: 3.6s;
+}
+.smoke_typo_an span:nth-child(6)
+{
+    animation-delay: 4.2s;
+}
+
+  /**/
+@keyframes type {
+    0% {
+        opacity: 0.5;
+        width: 0ch;
+    }
+    100% {
+        opacity: 1;
+        width: 33ch;
+        color: rgb(175, 139, 46);
+}
+    }
+
+.typo_an
+{
+    animation-delay: 4.2s;
+}
